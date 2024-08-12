@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal Communication</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="topbar">
+    <button class="openbtn" onclick="openNav()">☰</button>
+    <div class="topbar-content">
+        <img src="pictures/logo.png" alt="Logo" class="logo">
+        <div class="profile">
+            <img src="pictures/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <span class="profile-name">Wedson Chiumia</span>
+        </div>
+    </div>
+</div>
+
+<div id="mySidebar" class="sidebar-popup">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="technical_staff_dashboard.html">Dashboard</a>
+    <a href="user_management.html">User Management</a>
+    <a href="report_submission.html">Report Submission</a>
+    <a href="internal_communication.html">Internal Communication</a>
+    <a href="workplan_submission.html">Workplan Submission</a>
+</div>
+
+<div id="main" class="main-content">
+    <h1>Internal Communication</h1>
+    <div class="announcements">
+        <h2>Announcements</h2>
+        <button>Create New Announcement</button>
+        <p>List of announcements will appear here.</p>
+    </div>
+    <div class="messaging">
+        <h2>Messaging</h2>
+        <div class="chat-window">
+            <div class="contact-list">
+                <!-- Contact list will be populated here -->
+            </div>
+            <div class="message-window">
+                <!-- Messages will be displayed here -->
+            </div>
+            <textarea placeholder="Type your message..."></textarea>
+            <button>Send</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidebar").style.left = "0";
+        document.getElementById("main").style.marginLeft = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidebar").style.left = "-250px";
+        document.getElementById("main").style.marginLeft = "0";
+    }
+</script>
+</body>
+</html>
